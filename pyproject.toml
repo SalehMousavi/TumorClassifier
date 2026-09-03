@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tumor-classifier"
+version = "1.0.0"
+description = "Brain tumor classification for APS360 Introduction to Deep Learning"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "h5py>=3.8.0",
+    "numpy>=1.24.0",
+    "opencv-python>=4.8.0",
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+    "scikit-learn>=1.3.0",
+    "matplotlib>=3.7.0",
+    "Pillow>=10.0.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["tumor_classifier*"]
